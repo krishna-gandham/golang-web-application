@@ -1,0 +1,5 @@
+docker build -t myusername/go-time-app .
+docker run -p 8080:8080 myusername/go-time-app
+docker login
+docker tag myusername/go-time-app myusername/go-time-app:latest
+docker push myusername/go-time-app:latest
